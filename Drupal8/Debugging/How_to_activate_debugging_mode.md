@@ -1,4 +1,8 @@
-The following will enable the debugging mode for drupal 8
+The following will enable the debugging mode for drupal 8.
+
+
+
+First Step
 ```{r, engine='bash', count_lines}
 $ sudo cp sites/example.settings.local.php sites/default/settings.local.php
 $ sudo chmod 755 sites/default/settings.local.php
