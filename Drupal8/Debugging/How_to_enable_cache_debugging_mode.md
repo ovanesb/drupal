@@ -1,6 +1,8 @@
 ### The following will enable cache debugging mode for drupal 8.
 
 
+#### It will show up all cached tags and cache context on a page
+
 ##### First Step
 Navigate to sites/development.services.yml and add the following under parameters:
 ```{r, engine='bash', count_lines}
