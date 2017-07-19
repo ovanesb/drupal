@@ -30,3 +30,7 @@ $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml'
 
 
 ##### Finally if you wish the changes to take effect. You must clear the cache.
+
+
+
+### [Go Back To Debugging INDEX](https://github.com/ovanesb/drupal/tree/master/Drupal8/Debugging)
