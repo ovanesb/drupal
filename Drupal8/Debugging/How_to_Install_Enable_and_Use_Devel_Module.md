@@ -5,7 +5,7 @@
 ##### First Step
 
 ###### By using interface
-Click **Manage->Extend** then into the search bar type Devel. 
+Click **Manage->Extend** then into the search bar type _Devel_. 
 It will apear then check the following boxes :
  - Devel
  - Devel generate
