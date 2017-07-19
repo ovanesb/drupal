@@ -1,14 +1,11 @@
-### The following will enable twig debugging mode for drupal 8.
-
-##### When view source it will tell which template is where. Also shows where it starts and where it finishes
+### The following will enable cache debugging mode for drupal 8.
 
 
 ##### First Step
 Navigate to sites/development.services.yml and add the following under parameters:
 ```{r, engine='bash', count_lines}
 parameters:
-  twig.config:
-    debug: true
+  http.response.debug_cacheability_headers: true
 ```
 
 
@@ -30,3 +27,4 @@ $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml'
 
 
 ##### Finally if you wish the changes to take effect. You must clear the cache.
+
