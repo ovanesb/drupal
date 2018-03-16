@@ -3,6 +3,12 @@
 
 ##### Add the following two methods to .docroot/profiles/custom/{project name}/{project name}.install
 
+##### First we will need to use the following two classes in our file.
+```php
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\field\Entity\FieldConfig;
+```
+
 ##### Create field storage.
  - _entity_type_ Its entity type will be paragraph.
  - _field_name_ That is name of the filed that we are going to create.
@@ -26,6 +32,17 @@ $storage = FieldConfig::create([
     'field_name' => 'field_body',
     'entity_type' => 'paragraph',
     'bundle' => 'text',
+    'label' => 'Body',
+]);
+$storage->save();
+```
+
+##### Create another instance of the field and attach it to the paragraph bundle text.
+```php
+$storage = FieldConfig::create([
+    'field_name' => 'field_body',
+    'entity_type' => 'paragraph',
+    'bundle' => 'text_two',
     'label' => 'Body',
 ]);
 $storage->save();
