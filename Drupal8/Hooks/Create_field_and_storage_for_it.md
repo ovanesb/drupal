@@ -37,7 +37,7 @@ $storage = FieldConfig::create([
 $storage->save();
 ```
 
-##### Create another instance of the field and attach it to the paragraph bundle text.
+##### Create another instance of the field and attach it to the paragraph bundle text_two.
 ```php
 $storage = FieldConfig::create([
     'field_name' => 'field_body',
